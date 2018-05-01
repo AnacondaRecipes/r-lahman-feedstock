@@ -14,16 +14,10 @@ source:
     - {{ cran_mirror }}/src/contrib/Archive/Lahman/Lahman_{{ version }}.tar.gz
   sha256: 6662a3674adc274aed42d6769fea3c6b0cc95561d1d6bd59cfdc7c24948a2698
 
-
-  # patches:
-   # List any patch files here
-   # - fix.patch
-
 build:
   merge_build_host: True  # [win]
   # If this is a new build for the same version, increment the build number.
   number: 0
-
 
   # This is required to make R link correctly on Linux.
   rpaths:
