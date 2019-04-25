@@ -17,6 +17,7 @@ build:
   merge_build_host: True  # [win]
   # If this is a new build for the same version, increment the build number.
   number: 0
+  noarch: generic
 
   # This is required to make R link correctly on Linux.
   rpaths:
@@ -55,6 +56,7 @@ about:
     It uses the data on pitching, hitting and fielding performance and other tables
     from 1871 through 2015, as recorded in the 2016 version of the database.
   license_family: GPL
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
   recipe-maintainers:
